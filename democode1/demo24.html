@@ -1,0 +1,44 @@
+<html>
+<head>
+	<script type="text/javascript">
+
+	  class  Vehicle extends Object{
+	          constructor(cname){
+			      this.carname=cname;
+				  console.log(this.carname)
+			  }
+	  }
+      class    Car extends Vehicle  {
+          constructor (cname,ctype){
+			super(cname)
+			this.cartype=ctype;
+			console.log(this.carname+"/"+this.cartype)
+			
+		  }		  
+          present(){
+				return  'My car name is'+ this.carname + 'the type is '+this.cartype;
+		  }
+	  }
+
+      class    Model   extends  Car {
+		  constructor (cname,ctype,cmod){
+			super(cname,ctype)
+            this.carmodel= cmod;
+			console.log(this.carname+"/"+this.cartype+"/"+this.carmodel)
+		  }
+		  show(){
+			return  'My car name is '+ this.carname + '  the type is   '+this.cartype+'   model name  '+this.carmodel;
+		  }
+	  }
+      
+	  var    obj  = new  Model('ford','4 wheeler','figoford')
+      document.write(obj.show())
+	
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>
